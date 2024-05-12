@@ -52,10 +52,15 @@ btn:hover {
   height: 200px;
 }
 
-header-section {
-  float: rights;
-  background-color: red;
+// =====================header-section start ======================//
+header-logo{
+  width: 70px;
 }
+#logo{
+  width: 150px;
+}
+// =====================header-section start ======================//
+
 
 .hero {
   height: 100vh;
@@ -114,7 +119,12 @@ col-md-4 {
   border: 1px solid red;
 }
 
-
+//====================free-consultancy start=============================//
+.free-consultancy{
+ margin-top: 440px;
+ padding-top: 40px
+}
+//====================free-consultancy ends=============================//
 
 @media (min-width: 300px) {
   .col-sm-12 {

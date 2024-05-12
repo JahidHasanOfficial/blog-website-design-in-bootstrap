@@ -11,77 +11,420 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/style/style.css">
-  <!-- <link rel="stylesheet" href=""> -->
-  <!-- <link rel="stylesheet" href="js"> -->
+  <link rel="stylesheet" href="css">
+<link rel="stylesheet" href="js">
   <style>
     /* Add custom styles here */
   </style>
 </head>
 <body>
 
+
+ 
+  
   <div class="container-fluid">
 
-
+<!-- =====================header-section start ====================== -->
 <div class="container">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light top-fixed">
-      <div class="header-section d-flex justify-content-between">
-       <div class="navbar-brand">
-        <a class="navbar-brand" href="#"><img src="image/logo.png" alt="" width="180px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-       </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+   <div class="d-flex">
+    <div>
+      <a class="navbar-brand" href="index.html"><img id="logo" class="header-logo" src="image/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     </div>
+   </div>
   
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav  ml-auto" >
+    <div>
+      <div class=" navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+         
+        
           
+          <!-- Dropdown menu -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
-              <a class="dropdown-item" href="#">Service 1</a>
-              <a class="dropdown-item" href="#">Service 2</a>
-              <a class="dropdown-item" href="#">Service 3</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Web Development</a>
+              <a class="dropdown-item" href="#">Mobile App Develop</a>
+              <a class="dropdown-item" href="#">Management Software</a>
+              <a class="dropdown-item" href="#">Mobile App Development</a>
+            
+              <a class="dropdown-item" href="#">Ecommerce Solutions</a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Prodducts
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Products
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
-              <a class="dropdown-item" href="#">Service 1</a>
-              <a class="dropdown-item" href="#">Service 2</a>
-              <a class="dropdown-item" href="#">Service 3</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Web Development</a>
+              <a class="dropdown-item" href="#">Mobile App Development</a>
+        
+              <a class="dropdown-item" href="#">Ecommerce Solutions</a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             
               Case Studies
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
-              <a class="dropdown-item" href="#">Service 1</a>
-              <a class="dropdown-item" href="#">Service 2</a>
-              <a class="dropdown-item" href="#">Service 3</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Web Development</a>
+              <a class="dropdown-item" href="#">Mobile App Development</a>
+            
+              <a class="dropdown-item" href="#">Ecommerce Solutions</a>
             </div>
           </li>
-
-
-         
-         
-       
-         
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Web Development</a>
+              <a class="dropdown-item" href="#">Mobile App Development</a>
+            
+              <a class="dropdown-item" href="#">Ecommerce Solutions</a>
+            </div>
           </li>
-          
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-bars fs-4" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Web Development</a>
+              <a class="dropdown-item" href="#">Mobile App Development</a>
+            
+              <a class="dropdown-item" href="#">Ecommerce Solutions</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white" href="consultancy.html">Free consultancy</a>
+          </li>
         </ul>
+        <!-- Right-aligned items -->
+      
       </div>
-      </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 </div>
+<!-- =====================header-section end ====================== -->
+
+
+<!-- =====================Hero-section start ====================== -->
+<div class="container">
+  <div class="row mt-5">
+   
+    <div class="col-md-6 col-sm-12">
+      <div class="m-2 mt-lg-5 hero-section-1" style="width: 100%;">
+        <h1>Empowering <br> Entrepreneurs <br>Through Technology</h1>
+
+          <p>We're geared up to empower you with cutting-edge solutions, from software <br> development to cloud services, AI, and machine learning, with 100% project delivery <br> success.</p>
+
+        
+          <a href="#" class=" ml-4 mt-4 btn btn-primary">Let's Talk</a>
+          <a href="#" class="ml-4 mt-4 btn btn-primary">View Portfolio</a>
+        
+      </div>
+      </div>
+    <div class="col-md-6 col-sm-12 mt-5">
+      <div class="m-2 hero-section-2" style="width: 100%;">
+        <img src="image/slider1.png" alt="" style="margin-top: -40px;">
+        
+      </div>
+      </div>
+  </div>
+ </div>
+<!-- =====================Hero-section end ====================== -->
+
+
+<!-- =====================Texon provides you Next Level technology. section start ====================== -->
+<div class="container">
+  <div>
+    <div class="row">
+     <div class="col-lg-10">
+      <h1>Texon provides you Next Level technology.</h1>
+      <p>We provide custom Website, Mobile App and Management Software development services <br>
+        for wide range of industry verticals</p>
+     </div>
+     <div class="mt-4 col-lg-2">
+      <a href="#" class="btn btn-primary">Contact Us</a>
+     </div>
+
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+   
+    <div class="col-md-4 col-sm-12">
+      <div class="card m-2" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <h1 class="margin-nagetive">Mobile App</h1>
+        
+      </div>
+      </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="card m-2" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <h1 class="margin-nagetive">Mobile App</h1>
+        
+      </div>
+      </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="card m-2" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <h1 class="margin-nagetive">Mobile App</h1>
+        
+      </div>
+      </div>
+   
+  </div>
+</div>
+<!-- ===================Texon provides you Next Level technology. section end ====================== -->
+
+
+<!-- ====================Our Previous Work section start ====================== -->
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-3 col-sm-12 ">
+      <div class="" style="width: 100%;">
+
+        
+
+        <div class="d-flex justify-content-between">
+          <div>
+            <a class="" href="">Case Studies</a>
+
+
+          </div>
+          <div>
+            <a href="">See All</a>
+          </div>
+        </div>
+        
+        <h1>Our Previous Work</h1>
+     
+      </div>
+      </div>
+
+    <div class="col-md-3 col-sm-12">
+      <div class="card m-2" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="">lorem</a>
+          <h5 class="card-title">Card title</h5>
+         
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+        </div>
+      </div>
+      </div>
+    <div class="col-md-3 col-sm-12 ">
+      <div class="card m-2" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="">lorem</a>
+          <h5 class="card-title">Card title</h5>
+         
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+    
+        </div>
+      </div>
+      </div>
+   
+    <div class="col-md-3 col-sm-12 ">
+      <div class="card" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="">lorem</a>
+          <h5 class="card-title">Card title</h5>
+         
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+    
+        </div>
+      </div>
+      </div>
+    <div class="col-md-3 col-sm-12 ">
+      <div class="card" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="">lorem</a>
+          <h5 class="card-title">Card title</h5>
+         
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+    
+        </div>
+      </div>
+      </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="card" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="">lorem</a>
+          <h5 class="card-title">Card title</h5>
+         
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+
+        </div>
+      </div>
+      </div>
+    <div class="col-md-3 col-sm-12 ">
+      <div class="card m-2" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="">lorem</a>
+          <h5 class="card-title">Card title</h5>
+         
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+        </div>
+      </div>
+      </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="card m-2" style="width: 100%;">
+        <img src="image/web1.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="">lorem</a>
+          <h5 class="card-title">Card title</h5>
+         
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+          <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
+         
+        </div>
+      </div>
+      </div>
+    
+    
+      </div>
+</div>
+<!-- ===================Our Previous Work section ends ====================== -->
+
+
+<!-- =====================Core Services and Competencies section start ====================== -->
+<div class="bg-light">
+  <div class=" container pt-lg-5 mt-4 pb-5 p-2">
+    <div class="text-center ">
+    
+      <h4>WHAT WE DO</h4>
+      <h1>Core Services and Competencies</h1>
+      <p>We transform your ideas into accomplished technology solutions. <br>
+        Our Team of professional developers has in-depth knowledge of all technologies and trends.</p>
+    </div>
+    <div class="row mt-5">
+      
+      <div class="col-md-4 col-sm-12">
+        <div class="card m-2" style="width: 100%;">
+          
+          <div class="card-body">
+           <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
+           
+            <h5 class="card-titl mt-3 mb-3">Web Design & Development</h5>
+           
+           <p>With a custom web application, you will be able to fully implement your business idea and own a user-friendly website.</p>
+            <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        </div>
+     
+      <div class="col-md-4 col-sm-12">
+        <div class="card m-2" style="width: 100%;">
+          
+          <div class="card-body">
+           <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
+           
+            <h5 class="card-titl mt-3 mb-3">Mobile Apps Development</h5>
+           
+           <p>We provide B2B or B2E apps for enterprises, small businesses, and startups.</p>
+            <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        </div>
+     
+      <div class="col-md-4 col-sm-12">
+        <div class="card m-2" style="width: 100%;">
+          
+          <div class="card-body">
+           <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
+           
+            <h5 class="card-titl mt-3 mb-3">Business Management Software</h5>
+           
+           <p>Business performance and operational agility depend on the processes you set, manage your business digitally.</p>
+            <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        </div>
+     
+      <div class="col-md-4 col-sm-12">
+        <div class="card m-2" style="width: 100%;">
+          
+          <div class="card-body">
+           <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
+           
+            <h5 class="card-titl mt-3 mb-3">AI & Automation</h5>
+           
+           <p>Adopting Artificial Intelligence (AI) is the best way to enhance the quality of your business process swiftly.</p>
+            <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        </div>
+     
+      <div class="col-md-4 col-sm-12">
+        <div class="card m-2" style="width: 100%;">
+          
+          <div class="card-body">
+           <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
+           
+            <h5 class="card-titl mt-3 mb-3">AWS & Cloud Computing</h5>
+           
+           <p>With a custom web application, you will be able to fully implement your business idea and own a user-friendly website.</p>
+            <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        </div>
+     
+      <div class="col-md-4 col-sm-12">
+        <div class="card m-2" style="width: 100%;">
+          
+          <div class="card-body">
+           <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
+           
+            <h5 class="card-titl mt-3 mb-3">IT Infrastructure Solutions</h5>
+           
+           <p>Our comprehensive services encompass networking, CCTV surveillance, cyber security, cloud solutions, and more.</p>
+            <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        </div>
+     
+   
+  </div>
+  </div>
+ </div>
+<!-- ====================Core Services and Competencies section ends ====================== -->
+
+
+<!-- =====================header-section start ====================== -->
+<!-- =====================header-section start ====================== -->
+<!-- =====================header-section start ====================== -->
+<!-- =====================header-section start ====================== -->
+<!-- =====================header-section start ====================== -->
+<!-- =====================header-section start ====================== -->
+<!-- =====================header-section start ====================== -->
+<!-- =====================header-section start ====================== -->
+<!-- =====================header-section start ====================== -->
 
 
 
@@ -90,300 +433,22 @@
    
 
  
-   <div class="container">
-    <div class="row">
-     
-      <div class="col-md-6 col-sm-12">
-        <div class="m-2 mt-lg-5 hero-section-1" style="width: 100%;">
-          <h1>Empowering <br> Entrepreneurs <br>Through Technology</h1>
   
-            <p>We're geared up to empower you with cutting-edge solutions, from software <br> development to cloud services, AI, and machine learning, with 100% project delivery <br> success.</p>
-  
-          
-            <a href="#" class=" ml-4 mt-4 btn btn-primary">Let's Talk</a>
-            <a href="#" class="ml-4 mt-4 btn btn-primary">View Portfolio</a>
-          
-        </div>
-        </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="m-2 hero-section-2" style="width: 100%;">
-          <img src="image/hero section.png" alt="" style="margin-top: -40px;">
-          
-        </div>
-        </div>
-    </div>
-   </div>
 
-    <div class="container">
-      <div>
-        <div class="row">
-         <div class="col-lg-10">
-          <h1>Texon provides you Next Level technology.</h1>
-          <p>We provide custom Website, Mobile App and Management Software development services <br>
-            for wide range of industry verticals</p>
-         </div>
-         <div class="mt-4 col-lg-2">
-          <a href="#" class="btn btn-primary">Contact Us</a>
-         </div>
   
-        </div>
-      </div>
-    </div>
-
     
-  <div class="container">
-    <div class="row">
-     
-      <div class="col-md-4 col-sm-12">
-        <div class="card m-2" style="width: 100%;">
-          <img src="image/web1.avif" class="card-img-top" alt="...">
-          <h1 class="margin-nagetive">Mobile App</h1>
-          
-        </div>
-        </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="card m-2" style="width: 100%;">
-          <img src="image/web1.avif" class="card-img-top" alt="...">
-          <h1 class="margin-nagetive">Mobile App</h1>
-          
-        </div>
-        </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="card m-2" style="width: 100%;">
-          <img src="image/web1.avif" class="card-img-top" alt="...">
-          <h1 class="margin-nagetive">Mobile App</h1>
-          
-        </div>
-        </div>
-     
-    </div>
-  </div>
-
-
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-md-3 col-sm-12 ">
-          <div class="" style="width: 100%;">
-  
-            
-  
-            <div class="d-flex justify-content-between">
-              <div>
-                <a class="" href="">Case Studies</a>
-  
-  
-              </div>
-              <div>
-                <a href="">See All</a>
-              </div>
-            </div>
-            
-            <h1>Our Previous Work</h1>
-         
-          </div>
-          </div>
-  
-        <div class="col-md-3 col-sm-12">
-          <div class="card m-2" style="width: 100%;">
-            <img src="image/web1.avif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="">lorem</a>
-              <h5 class="card-title">Card title</h5>
-             
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-            </div>
-          </div>
-          </div>
-        <div class="col-md-3 col-sm-12 ">
-          <div class="card m-2" style="width: 100%;">
-            <img src="image/web1.avif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="">lorem</a>
-              <h5 class="card-title">Card title</h5>
-             
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-        
-            </div>
-          </div>
-          </div>
-       
-        <div class="col-md-3 col-sm-12 ">
-          <div class="card" style="width: 100%;">
-            <img src="image/web1.avif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="">lorem</a>
-              <h5 class="card-title">Card title</h5>
-             
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-        
-            </div>
-          </div>
-          </div>
-        <div class="col-md-3 col-sm-12 ">
-          <div class="card" style="width: 100%;">
-            <img src="image/web1.avif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="">lorem</a>
-              <h5 class="card-title">Card title</h5>
-             
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-        
-            </div>
-          </div>
-          </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card" style="width: 100%;">
-            <img src="image/web1.avif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="">lorem</a>
-              <h5 class="card-title">Card title</h5>
-             
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-  
-            </div>
-          </div>
-          </div>
-        <div class="col-md-3 col-sm-12 ">
-          <div class="card m-2" style="width: 100%;">
-            <img src="image/web1.avif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="">lorem</a>
-              <h5 class="card-title">Card title</h5>
-             
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-            </div>
-          </div>
-          </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card m-2" style="width: 100%;">
-            <img src="image/web1.avif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="">lorem</a>
-              <h5 class="card-title">Card title</h5>
-             
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-              <a href="#" class="btn btn-outline-primary" style="border-radius: 20px;">Laravel</a>
-             
-            </div>
-          </div>
-          </div>
-        
-        
-          </div>
-    </div>
 
 
 
-       <div class="bg-light">
-        <div class=" container pt-lg-5 mt-4 pb-5 p-2">
-          <div class="text-center ">
-          
-            <h4>WHAT WE DO</h4>
-            <h1>Core Services and Competencies</h1>
-            <p>We transform your ideas into accomplished technology solutions. <br>
-              Our Team of professional developers has in-depth knowledge of all technologies and trends.</p>
-          </div>
-          <div class="row mt-5">
-            
-            <div class="col-md-4 col-sm-12">
-              <div class="card m-2" style="width: 100%;">
-                
-                <div class="card-body">
-                 <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
-                 
-                  <h5 class="card-titl mt-3 mb-3">Web Design & Development</h5>
-                 
-                 <p>With a custom web application, you will be able to fully implement your business idea and own a user-friendly website.</p>
-                  <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              </div>
-           
-            <div class="col-md-4 col-sm-12">
-              <div class="card m-2" style="width: 100%;">
-                
-                <div class="card-body">
-                 <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
-                 
-                  <h5 class="card-titl mt-3 mb-3">Mobile Apps Development</h5>
-                 
-                 <p>We provide B2B or B2E apps for enterprises, small businesses, and startups.</p>
-                  <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              </div>
-           
-            <div class="col-md-4 col-sm-12">
-              <div class="card m-2" style="width: 100%;">
-                
-                <div class="card-body">
-                 <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
-                 
-                  <h5 class="card-titl mt-3 mb-3">Business Management Software</h5>
-                 
-                 <p>Business performance and operational agility depend on the processes you set, manage your business digitally.</p>
-                  <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              </div>
-           
-            <div class="col-md-4 col-sm-12">
-              <div class="card m-2" style="width: 100%;">
-                
-                <div class="card-body">
-                 <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
-                 
-                  <h5 class="card-titl mt-3 mb-3">AI & Automation</h5>
-                 
-                 <p>Adopting Artificial Intelligence (AI) is the best way to enhance the quality of your business process swiftly.</p>
-                  <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              </div>
-           
-            <div class="col-md-4 col-sm-12">
-              <div class="card m-2" style="width: 100%;">
-                
-                <div class="card-body">
-                 <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
-                 
-                  <h5 class="card-titl mt-3 mb-3">AWS & Cloud Computing</h5>
-                 
-                 <p>With a custom web application, you will be able to fully implement your business idea and own a user-friendly website.</p>
-                  <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              </div>
-           
-            <div class="col-md-4 col-sm-12">
-              <div class="card m-2" style="width: 100%;">
-                
-                <div class="card-body">
-                 <a class="text-center icon-section bg-primary" href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
-                 
-                  <h5 class="card-titl mt-3 mb-3">IT Infrastructure Solutions</h5>
-                 
-                 <p>Our comprehensive services encompass networking, CCTV surveillance, cyber security, cloud solutions, and more.</p>
-                  <a href="#" class="btn btn-primary" style="border-radius: 20px;">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              </div>
-           
-         
-        </div>
-        </div>
-       </div>
+   
+
+
+
+   
 
 
 
        <!-- ======================Ready-made software for Section start============================= -->
-        
        <div class="container">
         <div class="row mt-5">
           <div class="col-md-8 col-sm-12">
@@ -421,13 +486,10 @@
           </div>
         </div>
       </div>
-      
-
    <!-- ======================Ready-made software for Section end============================= -->
 
 
    <!-- ======================Who We Are Section start============================= -->
-
    <div class="container">
     <div class="row">
      
@@ -459,12 +521,10 @@
         </div>
     </div>
    </div>
-
    <!-- ======================Who We Are Section end============================= -->
     
     
       <!-- ======================Who We Are Section start============================= -->
-
    <div class="bg-dark">
     <div class="container ">
       <div class="row py-5">
@@ -537,7 +597,6 @@
       </div>
      </div>
    </div>
-    
        <!-- ======================Who We Are Section end============================= -->
 
 
@@ -545,7 +604,6 @@
 
 
        <!-- ======================Dynamic Website start============================= -->
-
        <div class="container">
         <div class="row">
 
@@ -576,9 +634,9 @@
          
         </div>
        </div>
-
        <!-- ======================Dynamic Website end============================= -->
-
+    
+       <!-- ======================Mobile Apps Development start============================= -->
        <div class="container">
         <div class="row">
 
@@ -610,16 +668,10 @@
          
         </div>
        </div>
-
-       <!-- ======================Mobile Apps Development start============================= -->
-
-
        <!-- ======================Mobile Apps Development end============================= -->
 
 
-
        <!-- ======================Technology We used start============================= -->
-
        <div class="bg-dark">
         <div class="container ">
           <div class="row py-5">
@@ -666,26 +718,22 @@
           </div>
          </div>
        </div>
-
        <!-- ======================Dynamic Website end============================= -->
 
 
 
 
        <!-- ======================See What our Client Say about us start============================= -->
-
        <div class="container">
         <div class="row mt-5">
-
          <div class="text-center">
-          <h5>TESTIMONIALS</h5>
-          <h1>See What our Client Say about us</h1>
-          <p>We provide custom development services across industries to ensure your</p>
-         </div>
-          
+          <h5 class="text-black">TESTIMONIALS</h5>
+          <h1 class="text-dark">See What our Client Say about us</h1>
+          <p class="text-secondary">We provide custom development services across industries to ensure your</p>
+         </div>         
          <div class="col-md-4 col-sm-12">
           <div class="card shadow-lg m-2 p-3" style="width: 100%;">
-            <p>Texon Limited has many clients across the country and they are already working globally. I must say that Texon limited has a strong management and qualified resource. They developed a desktop POS software for our fashion brand bworldy fashion. We are still using the system very well.</p>
+            <p class="text-secondary">Texon Limited has many clients across the country and they are already working globally. I must say that Texon limited has a strong management and qualified resource. They developed a desktop POS software for our fashion brand bworldy fashion. We are still using the system very well.</p>
             <div class="row">
               <div class="col-md-4 col-sm-12">
                 <img id="client-about-section" src="image/sulayman muhammad.jpg" alt="">
@@ -704,7 +752,7 @@
 
          <div class="col-md-4 col-sm-12">
           <div class="card shadow-lg m-2 p-3" style="width: 100%;">
-            <p>We were looking for a software development partner that could bring our vision to business, and Texon Limited exceeded our expectations. Their team was able to take our ideas and turn them into a functional and user-friendly software solution. We would definitely work with Texon again in the future.</p>
+            <p class="text-secondary">We were looking for a software development partner that could bring our vision to business, and Texon Limited exceeded our expectations. Their team was able to take our ideas and turn them into a functional and user-friendly software solution. We would definitely work with Texon again in the future.</p>
             <div class="row">
               <div class="col-md-4 col-sm-12">
                 <img id="client-about-section" src="image/humayun kabir unipolar.jpg" alt="" >
@@ -719,7 +767,7 @@
       
             <div class="col-md-4 col-sm-12">
               <div class="card shadow-lg m-2 p-3" style="width: 100%;">
-                <p>The Texon team was a pleasure to work with. They were always available to answer questions, provide updates, and offer suggestions. The final product was exactly what we were looking for, and we were impressed with their ability to deliver the project on time.</p>
+                <p class="text-secondary">The Texon team was a pleasure to work with. They were always available to answer questions, provide updates, and offer suggestions. The final product was exactly what we were looking for, and we were impressed with their ability to deliver the project on time.</p>
                 <div class="row">
                   <div class="col-md-4 col-sm-12">
                     <img id="client-about-section" src="image/humaon_ahmed.jpg" alt="">
@@ -742,7 +790,7 @@
       <div class="row"> 
         <div class="col-md-6 col-sm-12">
          <div class="card m-2 p-3 shadow-lg">
-           <p>Texon Limited has many clients across the country and they are already working globally. I must say that Texon limited has a strong management and qualified resource. They developed a desktop POS software for our fashion brand bworldy fashion. We are still using the system very well.</p>
+           <p class="text-secondary">Texon Limited has many clients across the country and they are already working globally. I must say that Texon limited has a strong management and qualified resource. They developed a desktop POS software for our fashion brand bworldy fashion. We are still using the system very well.</p>
            <div class="row">
              <div class="col-md-2 col-sm-12">
                <img id="client-about-section" src="image/sulayman muhammad.jpg" alt="">
@@ -760,7 +808,7 @@
 
          <div class="col-md-6 col-sm-12">
           <div class="card m-2 p-3 shadow-lg" style="width: 100%;">
-            <p>Texon Limited has many clients across the country and they are already working globally. I must say that Texon limited has a strong management and qualified resource. They developed a desktop POS software for our fashion brand bworldy fashion. We are still using the system very well.</p>
+            <p class="text-secondary">Texon Limited has many clients across the country and they are already working globally. I must say that Texon limited has a strong management and qualified resource. They developed a desktop POS software for our fashion brand bworldy fashion. We are still using the system very well.</p>
             <div class="row">
               <div class="col-md-2 col-sm-12">
                 <img id="client-about-section" src="image/sulayman muhammad.jpg" alt="">
@@ -785,14 +833,10 @@
 
 
       </div>
-
-
-
        <!-- ======================See What our Client Say about us end============================= -->
 
 
        <!-- ======================Our company offers you most professional technology services start============================= -->
-
        <div class="bg-dark my-5">
         <div class="container ">
           <div class="row py-5">          
@@ -802,25 +846,20 @@
           <div class="col-md-4 col-sm-12 text-end">
             <a class="btn btn-outline-light" href="#">Read More</a>
             </div>
-            </div>
-         
+            </div>         
           </div>
          </div>
-       
-
        <!-- ======================Our company offers you most professional technology services end============================= -->
 
-       <!-- ======================Tech Knowledge start============================= -->
 
-       
+       <!-- ======================Tech Knowledge start============================= -->      
         <div class="container ">
           <div class="text-center">
             <h3>BLOGS</h3>
             <h4>Tech Knowledge</h4>
             <p>We provide custom development services across industries to ensure your</p>
           </div>
-          <div class="row py-5"> 
-            
+          <div class="row py-5">            
             <div class="col-md-4 col-sm-12">
               <div class="card m-2 hover:shadow-lg  " style="width: 100%;">
               <div>
@@ -859,8 +898,6 @@
          
           </div>
          </div>
-  
-
        <!-- ======================Tech Knowledge end============================= -->
     
        
@@ -873,68 +910,72 @@
   
     <footer class="bg-dark">
       <div class="container">
-        <div class="row p-5">
+        <div class="row py-4">
           <!-- Company Information -->
-          <div class="col-md-2 col-sm-12 text-light footer-section text-white">
+          <div class="col-md-3 col-sm-12 text-light footer-section text-white">
             <div class="navbar-brand pb-4">
-              <a class="navbar-brand" href="#"><img class="text-white bg-white" src="image/logo.png" alt="" width="180px"></a>
+              <a class="navbar-brand" href="#"><img class="" src="image/logo-white.png" alt="" width="180px"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
           </div>
           
           <a class="px-4 text-white" href="#">See Details</a>
-          <p class="pt-3">Texon limited is a software development company that we are working for empowering entrepreneurs' ideas to business with Gen-Z technology.</p>
+          <p class="pt-3 text-secondary">Texon limited is a software development company that we are working for empowering entrepreneurs' ideas to business with Gen-Z technology.</p>
+          <i class="fa fa-facebook-official fs-1 text-secondary" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square fs-1 text-secondary" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square fs-1 text-secondary" aria-hidden="true"></i>
+          <i class="fa fa-instagram fs-1 text-secondary" aria-hidden="true"></i>
           </div>
-          <div class="col-md-3 col-sm-12 footer-section text-white">
+          <div class="col-md-2 col-sm-12 footer-section text-white">
             <h4 class="footer-title">TOP SERVICES</h4>
            <div class="text-white">
-            <a class="text-white" href="#">Web Development</a><br>
-            <a class="text-white" href="#">Mobile App Dev.</a><br>
-            <a class="text-white" href="#">Business Software</a><br>
-            <a class="text-white" href="#">AI & Automation</a><br>
-            <a class="text-white" href="#">AWS Services</a><br>
-            <a class="text-white" href="#">IT Infrastructure</a><br>
-            <a class="text-white" href="#">UI/UX Consulting</a><br>
+            <a class="text-secondary" href="#">Web Development</a><br>
+            <a class="text-secondary" href="#">Mobile App Dev.</a><br>
+            <a class="text-secondary" href="#">Business Software</a><br>
+            <a class="text-secondary" href="#">AI & Automation</a><br>
+            <a class="text-secondary" href="#">AWS Services</a><br>
+            <a class="text-secondary" href="#">IT Infrastructure</a><br>
+            <a class="text-secondary" href="#">UI/UX Consulting</a><br>
            </div>
           </div>
           <!-- Quick Links -->
           
           <!-- Contact Us -->
-          <div class="col-md-3 col-sm-12 footer-section text-white">
+          <div class="col-md-3 col-sm-12 footer-section text-white text-center">
             <h4 class="footer-title">TOP PRODUCTS</h4>
-            <a class="text-white" href="#">Ecommerce Site & App</a><br>
-            <a class="text-white" href="#"> EduTech & Accounting</a><br>
-            <a class="text-white" href="#"> ERP Software</a><br>
-            <a class="text-white" href="#"> POS Software</a><br>
-            <a class="text-white" href="#"> Pharmacy Software</a><br>
-             <a class="text-white" href="#">FashionFashion & Footer</a><br>
-            <a class="text-white" href="#"></> Export Import Business</a><br>
+            <a class="text-secondary" href="#">Ecommerce Site & App</a><br>
+            <a class="text-secondary" href="#"> EduTech & Accounting</a><br>
+            <a class="text-secondary" href="#"> ERP Software</a><br>
+            <a class="text-secondary" href="#"> POS Software</a><br>
+            <a class="text-secondary" href="#"> Pharmacy Software</a><br>
+             <a class="text-secondary" href="#">FashionFashion & Footer</a><br>
+            <a class="text-secondary" href="#"></> Export Import Business</a><br>
           </div>
           <!-- Maps -->
-          <div class="col-md-2 col-sm-12 footer-section">
+          <div class="col-md-1 col-sm-12 footer-section">
             <h4 class="text-white">PAGES</h4>
-            <a class="text-white" href="#">About</a><br>
-            <a class="text-white" href="#">Career</a><br>
-            <a class="text-white" href="#">Team</a><br>
-            <a class="text-white" href="#">Blogs</a><br>
-            <a class="text-white" href="#">Case Studies</a><br>
+            <a class="text-secondary" href="#">About</a><br>
+            <a class="text-secondary" href="#">Career</a><br>
+            <a class="text-secondary" href="#">Team</a><br>
+            <a class="text-secondary" href="#">Blogs</a><br>
+            <a class="text-secondary" href="#">Case Studies</a><br>
          
           </div>
-          <div class="col-md-2 col-sm-12 footer-section">
+          <div class="col-md-3 col-sm-12 footer-section">
             <h4 class="text-white">CONTACT</h4>
-           <div class="text-white">
-            <a class="text-white" href="#"><i class="fa fa-map-marker fs-44" aria-hidden="true"></i> Begum Rokeya Sarani, East Shewrapara, Mirpur, Dhaka 1216</a><br>
-            <a class="text-white" href="#"><i class="fa fa-phone fs-4" aria-hidden="true"></i> +88 01409 003646
+           <div class="text-secondary">
+            <a class="text-secondary" href="#"><i class="fa fa-map-marker fs-44" aria-hidden="true"></i> Begum Rokeya Sarani, East Shewrapara, Mirpur, Dhaka 1216</a><br>
+            <a class="text-secondary" href="#"><i class="fa fa-phone fs-4" aria-hidden="true"></i> +88 01409 003646
               +88 01751 763310</a><br>
-            <a class="text-white" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> texonltd@gmail.com</a><br>
+            <a class="text-secondary" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> texonltd@gmail.com</a><br>
            
            </div>
          
           </div>
         </div>
-        <h1 class="text-white font-weight-bold"><hr></h1>
-        <div class="p-4 text-center text-white bg-dark">
+        <h1 class="text-white mt-5 font-weight-bold"><hr></h1>
+        <div class="pb-4 text-center text-white bg-dark">
           <p>&copy; 2024 Texon Limited-@texonlimited</p>
         </div>
       </div>
