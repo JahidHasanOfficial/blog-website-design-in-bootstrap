@@ -1,4 +1,45 @@
 
+
+
+
+
+@media (min-width: 690px) {
+  .navbar-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+  }
+}
+@media (max-width: 690px) {
+  .navbar-div {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+  }
+}
+
+
+@media (max-width: 690px) {
+  .nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ 
+  }
+}
+
+
+
+
+
+
+
+
 /* ===========================Business Software Development================ */
 
 
@@ -33,3 +74,77 @@
     margin-bottom: -50px;
   }
   
+
+
+
+
+  @media (min-width: 690px) {
+    #footer_res{
+      text-align: center:
+      color: red;
+    }
+  }
+
+
+
+  /* =====================About/ .advisor-div section ============================== */
+
+@media (min-width: 1200px) {
+  .advisor-div{
+    background-color: red;
+  }
+}
+
+
+.effect-section {
+  position: relative;
+  //width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  transform: translate(-5%, -5%);
+  -ms-transform: translate(-5%, -5%);
+  text-align: center;
+}
+
+.effect-section:hover .image {
+  opacity: 0.3;
+ 
+}
+
+.effect-section:hover::after {
+  background-color: rgba(0, 0, 0, 0.7); /* black overlay with 70% opacity */
+}
+
+.effect-section:hover .middle {
+  opacity: 1;
+  
+}
+
+.text {
+  //background-color: #04AA6D;
+  //color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+
+  /* =====================About/ FAQ-div section ============================== */
+
+

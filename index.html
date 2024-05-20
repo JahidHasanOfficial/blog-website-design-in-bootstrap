@@ -11,6 +11,59 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Ensure dropdowns show on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.bounce-animation {
+  animation: bounce 0.6s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-7px);
+  }
+}
+
+
+
+
+
+.sidebar {
+  width: 80%;
+  max-width: 400px;
+  height: 100%;
+  position: fixed;
+  top: 50px;
+  right: -400px;
+  background: white;
+  z-index: 30;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+.sidebar.show {
+  right: 0;
+}
+.sidebar-close {
+  display: none;
+}
+.sidebar.show .sidebar-close {
+  display: block;
+}
+.button{
+  z-index: 1000;
+}
+  </style>
  
 </head>
 <body>
@@ -18,7 +71,7 @@
 
  
   
-  <div class="">
+
 
 
 
@@ -26,96 +79,110 @@
 
 <!-- =====================header-section start ====================== -->
 <div class="container">
-  <nav class="navbar navbar-expand-lg px-4 navbar-light d-flex justify-content-between">
-   <div class="d-flex">
+  <nav class="navbar navbar-expand-lg px-4 navbar-light navbar-div">
+   
     <div class="">
-      <a class="navbar-brand" href="index.html"><img id="logo" class="header-logo" src="image/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-     </div>
-   </div>
-  
-    <div>
-      <div class=" navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-         
-        
-          
-          <!-- Dropdown menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="web_development.html">Web Development</a>
-              <a class="dropdown-item" href="mobile_app.html">Mobile App Develop</a>
-              <a class="dropdown-item" href="management_softeware.html">Management Software</a>
-              <a class="dropdown-item" href="ai_automation.html">AI & Automation</a>              
-              <a class="dropdown-item" href="aws_services.html">AWS Services</a>
-              <a class="dropdown-item" href="if infrastructure.html">If Infrastructure</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Products
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="ecommerce_site_&_app.html">Ecommerce Site & App</a>
-              <a class="dropdown-item" href="edutech_accounting.html">EduTech & Accounting</a>
-              <a class="dropdown-item" href="erp_software.html">ERP Software</a>
-              <a class="dropdown-item" href="pos_software.html">POS Software</a>              
-              <a class="dropdown-item" href="pharmacy_mang_soft.html">Pharmacy Management Software</a>
-              <a class="dropdown-item" href="fashion_footwear.html">Fashion & Footwear</a>
-              <a class="dropdown-item" href="export_import_buss.html">Export Import Business</a>
-              <a class="dropdown-item" href="book_publisher.html">Book Publisher</a>
-              <a class="dropdown-item" href="dealership_business.html">Dealership Business</a>
-              <a class="dropdown-item" href="if infrastructure.html"></a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="case_studies.html">Case Studies</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             
-              About
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="about-us.html">About Us</a>
-              <a class="dropdown-item" href="advisor.html">Advisor</a>
-            
-              <a class="dropdown-item" href="#">Ecommerce Solutions</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-bars fs-4" aria-hidden="true"></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Web Development</a>
-              <a class="dropdown-item" href="#">Mobile App Development</a>
-            
-              <a class="dropdown-item" href="#">Ecommerce Solutions</a>
-            </div>
-          </li> -->
+      <div class="nav-div">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" class="header-logo" src="image/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
 
-          <li class="nav-item">
-            <a class="nav-link" href="side.html"> <i class="fa fa-bars fs-4" aria-hidden="true"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-primary text-white" href="consultancy.html">Free consultancy</a>
-          </li>
-        </ul>
-        <!-- Right-aligned items -->
+
+      <div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <!-- Services Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="web_development.html">Web Development</a>
+                <a class="dropdown-item" href="mobile_app.html">Mobile App Development</a>
+                <a class="dropdown-item" href="management_software.html">Management Software</a>
+                <a class="dropdown-item" href="ai_automation.html">AI & Automation</a>
+                <a class="dropdown-item" href="aws_services.html">AWS Services</a>
+                <a class="dropdown-item" href="it_infrastructure.html">IT Infrastructure</a>
+              </div>
+            </li>
       
+            <!-- Products Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu fs" aria-labelledby="productsDropdown">
+                <a class="dropdown-item" href="ecommerce_site_&_app.html">Ecommerce Site & App</a>
+                <a class="dropdown-item" href="edutech_accounting.html">EduTech & Accounting</a>
+                <a class="dropdown-item" href="erp_software.html">ERP Software</a>
+                <a class="dropdown-item" href="pos_software.html">POS Software</a>
+                <a class="dropdown-item" href="pharmacy_management_software.html">Pharmacy Management Software</a>
+                <a class="dropdown-item" href="fashion_footwear.html">Fashion & Footwear</a>
+                <a class="dropdown-item" href="export_import_business.html">Export Import Business</a>
+                <a class="dropdown-item" href="book_publisher.html">Book Publisher</a>
+                <a class="dropdown-item" href="dealership_business.html">Dealership Business</a>
+              </div>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="case_studies.html">Case Studies</a>
+            </li>
+      
+            <!-- About Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <a class="dropdown-item" href="about-us.html">About Us</a>
+                <a class="dropdown-item" href="advisor.html">Advisor</a>
+                <a class="dropdown-item" href="blog.html">Blogs</a>
+                <a class="dropdown-item" href="faq.html">FAQ</a>
+              </div>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="contact.html">Contact</a>
+            </li>
+      
+            <li class="nav-item">
+              <button class="btn button" id="sidebarToggle"><i class="fa fa-bars fs-4"></i></button>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary px-4 py-1 rounded-3 text-white bounce-animation" href="consultancy.html">Free consultancy</a>
+          </li>
+          </ul>
+     
       </div>
     </div>
   </nav>
 </div>
+
+
+
+
+<aside class="sidebar" id="sidebar">
+  <h1>asflsdfsd</h1>
+</aside>
+
+<script>
+  document.getElementById('sidebarToggle').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.toggle('show');
+      document.getElementById('sidebarClose').classList.toggle('sidebar-close');
+  });
+
+  document.getElementById('sidebarClose').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.remove('show');
+      this.classList.add('sidebar-close');
+  });
+</script>
+
 <!-- =====================header-section end ====================== -->
 
 
@@ -911,9 +978,9 @@
   
     <footer class="bg-dark">
       <div class="container">
-        <div class="row py-4">
+        <div class="row py-4 footer_res" id="footer_res">
           <!-- Company Information -->
-          <div class="col-md-3 col-sm-12 text-light footer-section text-white">
+          <div class="footer_res col-md-6 col-lg-3 col-sm-12 text-light footer-section text-white">
             <div class="navbar-brand pb-4">
               <a class="navbar-brand" href="#"><img class="" src="image/logo-white.png" alt="" width="180px"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -928,8 +995,8 @@
           <i class="fa fa-linkedin-square fs-1 text-secondary" aria-hidden="true"></i>
           <i class="fa fa-instagram fs-1 text-secondary" aria-hidden="true"></i>
           </div>
-          <div class="col-md-2 col-sm-12 footer-section text-white">
-            <h4 class="footer-title">TOP SERVICES</h4>
+          <div class="footer_res col-md-2 col-sm-12 footer-section text-white">
+            <h5 class="footer-title">TOP SERVICES</h5>
            <div class="text-white">
             <a class="text-secondary" href="#">Web Development</a><br>
             <a class="text-secondary" href="#">Mobile App Dev.</a><br>
@@ -943,8 +1010,8 @@
           <!-- Quick Links -->
           
           <!-- Contact Us -->
-          <div class="col-md-3 col-sm-12 footer-section text-white text-center">
-            <h4 class="footer-title">TOP PRODUCTS</h4>
+          <div class="col-md-6 col-lg-2 col-sm-12 footer-section text-white">
+            <h5 class="footer-title">TOP PRODUCTS</h5>
             <a class="text-secondary" href="#">Ecommerce Site & App</a><br>
             <a class="text-secondary" href="#"> EduTech & Accounting</a><br>
             <a class="text-secondary" href="#"> ERP Software</a><br>
@@ -954,8 +1021,8 @@
             <a class="text-secondary" href="#"></> Export Import Business</a><br>
           </div>
           <!-- Maps -->
-          <div class="col-md-1 col-sm-12 footer-section">
-            <h4 class="text-white">PAGES</h4>
+          <div class="col-md-2 text-center col-sm-12 footer-section">
+            <h5 class="text-white">PAGES</h5>
             <a class="text-secondary" href="#">About</a><br>
             <a class="text-secondary" href="#">Career</a><br>
             <a class="text-secondary" href="#">Team</a><br>
@@ -963,8 +1030,8 @@
             <a class="text-secondary" href="#">Case Studies</a><br>
          
           </div>
-          <div class="col-md-3 col-sm-12 footer-section">
-            <h4 class="text-white">CONTACT</h4>
+          <div class="col-lg-3 col-md-6 col-sm-12 footer-section">
+            <h5 class="text-white">CONTACT</h5>
            <div class="text-secondary">
             <a class="text-secondary" href="#"><i class="fa fa-map-marker fs-44" aria-hidden="true"></i> Begum Rokeya Sarani, East Shewrapara, Mirpur, Dhaka 1216</a><br>
             <a class="text-secondary" href="#"><i class="fa fa-phone fs-4" aria-hidden="true"></i> +88 01409 003646
@@ -986,7 +1053,7 @@
 
 
 
-  </div>
+
  
 
    <!-- Bootstrap JS -->

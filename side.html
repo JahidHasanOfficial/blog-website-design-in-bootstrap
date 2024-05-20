@@ -1,89 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: 'Lato', sans-serif;
-}
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texon Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the sidebar */
+        .sidebar {
+            width: 80%;
+            max-width: 400px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: -400px;
+            background: white;
+            z-index: 30;
+            transition: right 0.3s ease-in-out;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+        .sidebar.show {
+            right: 0;
+        }
+        .sidebar-close {
+            display: none;
+        }
+        .sidebar.show .sidebar-close {
+            display: block;
+        }
+        button{
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
+<!-- Navbar with the button -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+       
+        <button class="btn btn-primary" id="sidebarToggle"><i class="fa fa-bars fs-4"></i></button>
+    </div>
+</nav>
 
-<h2>Fullscreen Overlay Nav Example</h2>
-<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
-<p>In this example, the navigation menu will slide in, from left to right:</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+    <div class="bg-blue-900 px-8 py-4 flex justify-between items-center">
+        <h2 class="text-white font-bold text-3xl">Texon Limited</h2>
+        <div class="text-white py-1 cursor-pointer sidebar-close" id="sidebarClose">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="lg:hidden">
+        <div class="py-10 px-6">
+            <div class="flex flex-col space-y-2 divide-y divide-gray-200">
+                <div class="flex justify-between items-center py-2">
+                    <p class="text-gray-700 text-lg">Services</p>
+                    <div class="bg-blue-100 p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center py-2">
+                    <p class="text-gray-700 text-lg">Products</p>
+                    <div class="bg-blue-100 p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex justify-between py-2">
+                    <a href="/case-studies">
+                        <p class="text-gray-700 text-lg">Case Studies</p>
+                    </a>
+                </div>
+                <div class="flex justify-between items-center py-2">
+                    <p class="text-gray-700 text-lg">About</p>
+                    <div class="bg-blue-100 p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex justify-between py-2">
+                    <a href="/contact">
+                        <p class="text-gray-700 text-lg">Contact</p>
+                    </a>
+                </div>
+                <div class="flex justify-between py-2">
+                    <a href="/contact#contactForm">
+                        <p class="text-lg text-red-800 animate-bounce">Free Consultancy</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full my-6">
+        <h2 class="text-gray-600 text-2xl mb-1 px-8 font-semibold">Contact Info</h2>
+        <div class="flex space-x-1">
+            <div class="w-10 bg-blue-900 h-0.5 ml-8 my-2"></div>
+            <div class="w-4 bg-blue-900 h-0.5 ml-8 my-2"></div>
+        </div>
+    </div>
+    <div class="w-full text-gray-600 py-4 px-10 text-lg">
+        <div class="flex space-x-4 mb-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+            </svg>
+            <p>Begum Rokeya Sarani, East Shewrapara, Mirpur, Dhaka</p>
+        </div>
+        <div class="flex space-x-4 mb-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+            </svg>
+            <p>Saturday to Thursday, 11:00 am - 8:00 pm</p>
+        </div>
+        <div class="flex space-x-4 mb-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-700 pr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd"></path>
+            </svg>
+            <a href="mailto: texonltd@gmail.com"><p>texonltd@gmail.com</p></a>
+        </div>
+        <div class="flex space-x-4 mb-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+            <a href="tel: +8801409003646"><p>+88 01409 003646</p></a>
+        </div>
+        <div class="flex space-x-4 mb-10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor">
+                <path d="M22.987 13.966c1.357-7.765-5.416-14.412-13.052-12.979-5.821-3.561-12.503 3.226-8.935 9.029-1.387 7.747 5.384 14.48 13.083 13.01 5.832 3.536 12.493-3.26 8.904-9.06zm-10.603 5.891c-3.181 0-6.378-1.448-6.362-3.941.005-.752.564-1.442 1.309-1.442 1.873 0 1.855 2.795 4.837 2.795 2.093 0 2.807-1.146 2.807-1.944 0-2.886-9.043-1.117-9.043-6.543 0-2.938 2.402-4.962 6.179-4.741 3.602.213 5.713 1.803 5.917 3.289.101.971-.542 1.727-1.659 1.727-1.628 0-1.795-2.181-4.6-2.181-1.266 0-2.334.528-2.334 1.674 0 2.395 8.99 1.005 8.99 6.276-.001 3.039-2.423 5.031-6.041 5.031z"></path>
+            </svg>
+            <a target="_blank" href="https://wa.me/message/CC27YHXUFQWGD1"><p>+88 01409 003646</p></a>
+        </div>
+    </div>
+</aside>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+    document.getElementById('sidebarToggle').addEventListener('click', function () {
+        document.getElementById('sidebar').classList.toggle('show');
+        document.getElementById('sidebarClose').classList.toggle('sidebar-close');
+    });
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+    document.getElementById('sidebarClose').addEventListener('click', function () {
+        document.getElementById('sidebar').classList.remove('show');
+        this.classList.add('sidebar-close');
+    });
 </script>
-     
+
 </body>
 </html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Blog Layout</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Ensure dropdowns show on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.bounce-animation {
+  animation: bounce 0.6s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-7px);
+  }
+}
+
+
+
+
+
+.sidebar {
+  width: 80%;
+  max-width: 400px;
+  height: 100%;
+  position: fixed;
+  top: 50px;
+  right: -400px;
+  background: white;
+  z-index: 30;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+.sidebar.show {
+  right: 0;
+}
+.sidebar-close {
+  display: none;
+}
+.sidebar.show .sidebar-close {
+  display: block;
+}
+.button{
+  z-index: 1000;
+}
+
+
+@media (min-width: 760px) {
+    .advisor-div {
+     
+      height: 350px;
+    }
+  }
+  </style>
+ 
+</head>
+<body>
+
+
+ 
+  
+
+
+
+
+    
+
+<!-- =====================header-section start ====================== -->
+<div class="bg-white">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg px-4 navbar-light navbar-div">
+         
+          <div class="">
+            <div class="nav-div">
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="header-logo" src="image/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+      
+      
+            <div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <!-- Services Dropdown Menu -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                      <a class="dropdown-item" href="web_development.html">Web Development</a>
+                      <a class="dropdown-item" href="mobile_app.html">Mobile App Development</a>
+                      <a class="dropdown-item" href="management_software.html">Management Software</a>
+                      <a class="dropdown-item" href="ai_automation.html">AI & Automation</a>
+                      <a class="dropdown-item" href="aws_services.html">AWS Services</a>
+                      <a class="dropdown-item" href="it_infrastructure.html">IT Infrastructure</a>
+                    </div>
+                  </li>
+            
+                  <!-- Products Dropdown Menu -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Products
+                    </a>
+                    <div class="dropdown-menu fs" aria-labelledby="productsDropdown">
+                      <a class="dropdown-item" href="ecommerce_site_&_app.html">Ecommerce Site & App</a>
+                      <a class="dropdown-item" href="edutech_accounting.html">EduTech & Accounting</a>
+                      <a class="dropdown-item" href="erp_software.html">ERP Software</a>
+                      <a class="dropdown-item" href="pos_software.html">POS Software</a>
+                      <a class="dropdown-item" href="pharmacy_management_software.html">Pharmacy Management Software</a>
+                      <a class="dropdown-item" href="fashion_footwear.html">Fashion & Footwear</a>
+                      <a class="dropdown-item" href="export_import_business.html">Export Import Business</a>
+                      <a class="dropdown-item" href="book_publisher.html">Book Publisher</a>
+                      <a class="dropdown-item" href="dealership_business.html">Dealership Business</a>
+                    </div>
+                  </li>
+            
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="case_studies.html">Case Studies</a>
+                  </li>
+            
+                  <!-- About Dropdown Menu -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <a class="dropdown-item" href="about-us.html">About Us</a>
+                      <a class="dropdown-item" href="advisor.html">Advisor</a>
+                      <a class="dropdown-item" href="blog.html">Blogs</a>
+                      <a class="dropdown-item" href="#">FAQ</a>
+                    </div>
+                  </li>
+            
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="contact.html">Contact</a>
+                  </li>
+            
+                  <li class="nav-item">
+                    <button class="btn button" id="sidebarToggle"><i class="fa fa-bars fs-4"></i></button>
+                  </li>
+            
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-primary px-4 py-1 rounded-3 text-white bounce-animation" href="consultancy.html">Free consultancy</a>
+                </li>
+                </ul>
+           
+            </div>
+          </div>
+        </nav>
+      </div>
+</div>
+
+
+
+
+<aside class="sidebar" id="sidebar">
+  <h1>asflsdfsd</h1>
+</aside>
+
+<script>
+  document.getElementById('sidebarToggle').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.toggle('show');
+      document.getElementById('sidebarClose').classList.toggle('sidebar-close');
+  });
+
+  document.getElementById('sidebarClose').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.remove('show');
+      this.classList.add('sidebar-close');
+  });
+</script>
+
+<!-- =====================header-section end ====================== -->
+
+
+
+
+
+
+<div class="bg-light">
+    <div class="container py-5">
+        <div class="text-center py-5">
+          <p class="text-secondary">MEET OUR TEAM</p>
+          <h1>Fueling Success Together!</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 effect-section">
+            <div class="card m-2 " style="width: 100%;">
+              <img class="advisor-div image" src="image/Mehedi Shamim.jpg" class="card-img-top" alt="Mehedi Shamim">
+            </div>
+            <div class="middle">
+                <div class="text align-self-center">
+                    <h2>Mehedi Shamim</h2>
+                    <h5>BUSINESS STRATEGIES AND MARKETING ADVISOR</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12 effect-section">
+            <div class="card m-2" style="width: 100%;">
+              <img class="advisor-div image" src="image/humaon_ahmed.jpg" class="card-img-top" alt="Humaon Ahmed">
+            </div>
+            <div class="middle">
+                <div class="text align-self-center">
+                    <h2>Humayun Ahmed</h2>
+                    <h5>CORPORATE SALES AND BUSINESS ADVISOR</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12 effect-section">
+            <div class="card m-2" style="width: 100%;">
+              <img class="advisor-div image" src="image/TosarChandraDas.jpg" class="card-img-top" alt="Tosar Chandra Das">
+            </div>
+            <div class="middle">
+                <div class="text align-self-center">
+                    <h2>Tosar Chandra Das</h2>
+                    <h5>BUSINESS DEVELOPMENT CONSULTANT</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- ===================Texon provides you Next Level technology. section end ====================== -->
+
+
+
+
+
+
+
+     
+  
+   
+
+ 
+  
+
+  
+    
+
+
+
+   
+
+
+
+   
+
+
+
+  
+
+
+
+
+
+
+    
+
+
+ 
+
+     
+
+   
+    
+
+    <!-- Footer -->
+
+  
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row py-4 footer_res" id="footer_res">
+          <!-- Company Information -->
+          <div class="footer_res col-md-6 col-lg-3 col-sm-12 text-light footer-section text-white">
+            <div class="navbar-brand pb-4">
+              <a class="navbar-brand" href="#"><img class="" src="image/logo-white.png" alt="" width="180px"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+          
+          <a class="px-4 text-white" href="#">See Details</a>
+          <p class="pt-3 text-secondary">Texon limited is a software development company that we are working for empowering entrepreneurs' ideas to business with Gen-Z technology.</p>
+          <i class="fa fa-facebook-official fs-1 text-secondary" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square fs-1 text-secondary" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square fs-1 text-secondary" aria-hidden="true"></i>
+          <i class="fa fa-instagram fs-1 text-secondary" aria-hidden="true"></i>
+          </div>
+          <div class="footer_res col-md-2 col-sm-12 footer-section text-white">
+            <h5 class="footer-title">TOP SERVICES</h5>
+           <div class="text-white">
+            <a class="text-secondary" href="#">Web Development</a><br>
+            <a class="text-secondary" href="#">Mobile App Dev.</a><br>
+            <a class="text-secondary" href="#">Business Software</a><br>
+            <a class="text-secondary" href="#">AI & Automation</a><br>
+            <a class="text-secondary" href="#">AWS Services</a><br>
+            <a class="text-secondary" href="#">IT Infrastructure</a><br>
+            <a class="text-secondary" href="#">UI/UX Consulting</a><br>
+           </div>
+          </div>
+          <!-- Quick Links -->
+          
+          <!-- Contact Us -->
+          <div class="col-md-6 col-lg-2 col-sm-12 footer-section text-white">
+            <h5 class="footer-title">TOP PRODUCTS</h5>
+            <a class="text-secondary" href="#">Ecommerce Site & App</a><br>
+            <a class="text-secondary" href="#"> EduTech & Accounting</a><br>
+            <a class="text-secondary" href="#"> ERP Software</a><br>
+            <a class="text-secondary" href="#"> POS Software</a><br>
+            <a class="text-secondary" href="#"> Pharmacy Software</a><br>
+             <a class="text-secondary" href="#">FashionFashion & Footer</a><br>
+            <a class="text-secondary" href="#"></> Export Import Business</a><br>
+          </div>
+          <!-- Maps -->
+          <div class="col-md-2 text-center col-sm-12 footer-section">
+            <h5 class="text-white">PAGES</h5>
+            <a class="text-secondary" href="#">About</a><br>
+            <a class="text-secondary" href="#">Career</a><br>
+            <a class="text-secondary" href="#">Team</a><br>
+            <a class="text-secondary" href="#">Blogs</a><br>
+            <a class="text-secondary" href="#">Case Studies</a><br>
+         
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 footer-section">
+            <h5 class="text-white">CONTACT</h5>
+           <div class="text-secondary">
+            <a class="text-secondary" href="#"><i class="fa fa-map-marker fs-44" aria-hidden="true"></i> Begum Rokeya Sarani, East Shewrapara, Mirpur, Dhaka 1216</a><br>
+            <a class="text-secondary" href="#"><i class="fa fa-phone fs-4" aria-hidden="true"></i> +88 01409 003646
+              +88 01751 763310</a><br>
+            <a class="text-secondary" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> texonltd@gmail.com</a><br>
+           
+           </div>
+         
+          </div>
+        </div>
+        <h1 class="text-white mt-5 font-weight-bold"><hr></h1>
+        <div class="pb-4 text-center text-white bg-dark">
+          <p>&copy; 2024 Texon Limited-@texonlimited</p>
+        </div>
+      </div>
+    </footer>
+    
+   
+
+
+
+
+ 
+
+   <!-- Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
